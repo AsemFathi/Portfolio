@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compalible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My work</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8398962f6d.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="container">
+        <nav >
+            <img src="logo.png" class="logo">
+            <ul id="sidemune">
+                <li> <a href="index.html#header" >Home</a> </li>
+                <li> <a href="index.html#about" >About</a> </li>
+                <li> <a href="index.html#services" >Services</a> </li>
+                <li> <a href="index.html#portfolio" >Portfolio</a> </li>
+                <li> <a href="index.html#contact" >Contact</a> </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="XO.jpeg"width="400" height="400">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>Tic tac toe is a two-player game wherein the players will
+                        have to choose either X or O in a 3x3 grid</p>
+                    <a href="https://github.com/AsemFathi/Tic_Tac_Toe" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="GalleryAppIcon.jpeg" width="400" height="400">
+                <div class="layer">
+                    <h3>Gallery App</h3>
+                    <p>users would be able to see all the images present in their device in a grid layout
+                        structure.</p>
+                    <a href="https://github.com/AsemFathi/GalleryApp" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="MusicApp.jpeg" width="400" height="400">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>user would be able to search for a song present in their phone storage.</p>
+                    <a href="https://github.com/AsemFathi/MusicApp" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" ></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="MyworkPage.html" class="btn">See more</a>
+    </div>
+</div>
+</body>    
+
+<script>
+
+    var sidemune = document.getElementById("sidemune");
+    function openmenu()
+    {
+        sidemune.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemune.style.right = "-200px";
+    }
+</script>
+</html>

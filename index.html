@@ -110,6 +110,23 @@
             
         </div>
     </div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <!--To add more duplicate <div> -->
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Development</h2>
+                <p>As a junior Android developer, I have a strong foundation in software development 
+                    concepts and a passion for learning and growing in the field. I have experience 
+                    working with Java programming language, as well as Android Studio and Git for 
+                    version control.</p>
+                  <!--  <a href="#">Learn more</a>  ----------->
+            </div>
+            
+        </div>
+    </div>
 </div>
 
 <!---------------------------- Portfolio---------------------------- -->
@@ -173,8 +190,8 @@
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your name" required>
                     <input type="text" name="Email" placeholder="Your email" required>
-                   <textarea name="Message"rows="6" placeholder="Your message"></textarea>
-                   <button type="submit" class="btn btn2">Submit</button>
+                    <textarea name="Message"rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -222,19 +239,19 @@
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg");
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout( function(){
-                msg.innerHTML = ""
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout( function(){
+            msg.innerHTML = ""
 
-            },2000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
+        },2000)
+        form.reset()
     })
-  </script>
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
 
 </body>
 </html>

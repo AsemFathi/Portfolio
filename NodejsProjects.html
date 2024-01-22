@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compalible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My work</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8398962f6d.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="container">
+        <nav >
+            <img src="logo.png" class="logo">
+            <ul id="sidemune">
+                <li> <a href="index.html#header" >Home</a> </li>
+                <li> <a href="index.html#about" >About</a> </li>
+                <li> <a href="index.html#services" >Services</a> </li>
+                <li> <a href="index.html#portfolio" >Portfolio</a> </li>
+                <li> <a href="index.html#contact" >Contact</a> </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Nasapng.png"width="400" height="400">
+                <div class="layer">
+                    <h3>Nasa project</h3>
+                    <p>Node API that allows users to schedule missions with the destination being a
+                        habitable Kepler Exoplanet, and used data from SPACEX REST-API to get the launches history.
+                        After this I made a docker image and deployed this project in AWS with IP (51.20.56.86:8000)</p>
+                    <a href="https://github.com/AsemFathi/Tic_Tac_Toe" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------Contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> Asemfathi12@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 01149456082 - 01010688048</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/asem-fathi-5688b91a4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AsemFathi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/+201149456082" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="AsemFathi.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>    
+
+<script>
+
+    var sidemune = document.getElementById("sidemune");
+    function openmenu()
+    {
+        sidemune.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemune.style.right = "-200px";
+    }
+</script>
+</html>
